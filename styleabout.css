@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    color: black;
+    background-image: url(./images/design1_image1.jpg);
+    background-size: 100% 100%;
+    background-origin: content-box;
+    display: block;
+    position: relative;
+    height: 350px;
+    width: 100%;}
+
+.logo{
+    position: relative;
+    width: 150px;
+    left: 1050px;
+    top: 275px;
+}
+
+h1{
+    margin: 0px;
+    position: relative;
+    bottom: 140px;
+    font-size: 67px;
+    font-family: cursive;
+}
+
+
+h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    font-size: 38px;
+}
+
+main{
+    display: inline-flex;
+}
+
+nav{
+    display: inline-block;
+    position: static;
+    width: 300px;
+}
+
+nav > a {
+    color: blue;
+    display: block;
+    text-align: left;
+    /* margin: 88px; */
+    padding: 61px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about{
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    display: inline-block;
+    margin: 10px;
+    padding: 40px;
+    max-width: 1000px;
+}
+
+h3{font-weight: bold;
+
+}
+
+h4{
+    font-weight: lighter;
+}
+
+h3,h4{
+    border: 5px;
+}
+
