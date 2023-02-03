@@ -63,6 +63,16 @@ nav > a {
     color: black;
 }
 
+.about{
+    text-decoration: none;
+    color: black;
+}
+
+.contact{
+    text-decoration: none;
+    color: black;
+}
+
 section {
     display: inline-block;
     margin: 6px;
