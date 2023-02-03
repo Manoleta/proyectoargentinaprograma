@@ -58,21 +58,18 @@ nav > a {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.home{
+.home :visited{
     text-decoration: none;
     color: black;
 }
-
-.about{
+.about :visited{
     text-decoration: none;
     color: black;
 }
-
-.contact{
+.contact :visited{
     text-decoration: none;
     color: black;
 }
-
 section {
     display: inline-block;
     margin: 6px;
