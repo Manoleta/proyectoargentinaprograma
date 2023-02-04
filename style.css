@@ -8,24 +8,22 @@ header{
     background-image: url(./images/design1_image1.jpg);
     background-size: 100% 100%;
     background-origin: content-box;
-    display: block;
-    position: relative;
+    display: flex;
+    /*position: relative;*/
     height: 350px;
-    width: 100%;}
-
-.logo{
-    position: relative;
-    width: 150px;
-    left: 1050px;
-    top: 275px;
+    width: 100%;
+justify-content: space-between;
 }
+    
+
 
 h1{
     margin: 0px;
-    position: relative;
+   /* position: relative;*/
     bottom: 140px;
     font-size: 67px;
     font-family: cursive;
+    align-self: flex-end;
 }
 
 
@@ -38,13 +36,18 @@ h2{
 }
 
 main{
-    display: inline-flex;
+    flex-direction: column;
 }
 
 nav{
-    display: inline-block;
-    position: static;
-    width: 300px;
+    display: flex;
+   /* position: static;*/
+  /*  width: 300px;*/
+  justify-content: space-between;
+  height: 100px;
+  background-color: aqua;
+  align-items: center;
+  
 }
 
 nav > a {
@@ -57,24 +60,49 @@ nav > a {
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.home{
+    color: black;
+}
 
-.home :visited{
-    text-decoration: none;
+.home:visited {
+   color: blue;
+}
+.about {
     color: black;
 }
-.about :visited{
-    text-decoration: none;
+.about:visited{
+    color: blue;
+}
+.contact {
     color: black;
 }
-.contact :visited{
-    text-decoration: none;
+.contact:visited{
+    color: blue;
+}
+
+.rules {
     color: black;
 }
+.rules:visited {
+    color: blue;
+}
+.gameinfo {
+    color: black;
+}
+.gameinfo:visited {
+    color: blue;
+}
+
 section {
-    display: inline-block;
-    margin: 6px;
-    padding: 49px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
+/*
+article{
+    display: flex;
+}*/
 
 h3{font-weight: bold;
 
@@ -86,4 +114,36 @@ h4{
 
 h3,h4{
     border: 5px;
+}
+
+.foto{
+    display: flex;
+}
+
+.division { 
+  
+    display: flex;
+    flex-direction: column;
+  
+}
+.sectioncontact {
+    justify-content:center;
+    align-items: center;
+}
+
+.textocontent{
+    justify-content: center;
+}
+
+tr{
+    background-color: black;
+}
+
+td{
+    background-color: brown;
+}
+
+.div2{
+    display: flex;
+    justify-content: space-around;
 }
