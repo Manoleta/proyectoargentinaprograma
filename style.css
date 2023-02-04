@@ -135,15 +135,43 @@ h3,h4{
     justify-content: center;
 }
 
+table{
+    align-self: center;
+}
+
 tr{
     background-color: black;
+    border: 2px;
+    font-size: 25px;
+    margin: 3px;
+    text-align: center;
 }
 
 td{
     background-color: brown;
+    font-size: 25px;
+    margin: 3px;
+}
+
+.cuerpo{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game_info{
+    justify-content: center;
+    align-items: center;
 }
 
 .div2{
     display: flex;
     justify-content: space-around;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.about{
+    justify-content: center;
 }
