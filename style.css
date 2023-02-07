@@ -93,6 +93,15 @@ nav > a {
     color: blue;
 }
 
+.registration {
+    color: black;
+}
+
+.registration:visited {
+    color: blue;
+}
+
+
 section {
     display: flex;
     justify-content: space-between;
@@ -174,4 +183,19 @@ td{
 
 .about{
     justify-content: center;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+label{
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
 }
