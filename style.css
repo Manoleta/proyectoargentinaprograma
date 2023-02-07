@@ -222,7 +222,54 @@ flex-wrap: wrap;
 iframe {
     margin: 16px;
 }
+.boton {
+    font-size: large;
+    margin: 15px;
+    width: 50%;
+    align-self: center;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+header{
+flex-direction: column;
+}
 
+h1{
+    font-size: 20px;
+    display: block;
+    align-self: flex-start;
+}
+
+figure{
+    justify-content: center;
+    display: flex;
+}
+
+
+.foto{
+width: 80%;
+}
+nav{
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav > a {
+font-size: medium;
+padding: 20px;
+}
+
+.cuerpo{
+    margin: 5px;
+}
+.div2{
+    flex-direction: column;
+}
+
+td{
+    font-size: 20px;
+}
+.maps{
+    justify-content: center;
+}
 }
