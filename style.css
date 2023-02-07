@@ -15,8 +15,6 @@ header{
 justify-content: space-between;
 }
     
-
-
 h1{
     margin: 0px;
    /* position: relative;*/
@@ -25,7 +23,6 @@ h1{
     font-family: cursive;
     align-self: flex-end;
 }
-
 
 h2{
     text-align: center;
@@ -44,22 +41,23 @@ nav{
    /* position: static;*/
   /*  width: 300px;*/
   justify-content: space-between;
-  height: 100px;
   background-color: aqua;
   align-items: center;
-  
+  flex-wrap: wrap;
 }
 
 nav > a {
     color: blue;
-    display: block;
+    display: flex;
     text-align: left;
     /* margin: 88px; */
     padding: 61px;
     font-size: 20px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-wrap: wrap;
 }
+
 .home{
     color: black;
 }
@@ -101,12 +99,10 @@ nav > a {
     color: blue;
 }
 
-
 section {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
 /*
 article{
@@ -114,7 +110,6 @@ article{
 }*/
 
 h3{font-weight: bold;
-
 }
 
 h4{
@@ -133,15 +128,20 @@ h3,h4{
   
     display: flex;
     flex-direction: column;
+    margin: 25px;
   
 }
+
 .sectioncontact {
+    display: flex;
     justify-content:center;
     align-items: center;
+    flex-direction: column-reverse;
 }
 
-.textocontent{
+.textocontact{
     justify-content: center;
+    margin: 25px;
 }
 
 table{
@@ -165,11 +165,14 @@ td{
 .cuerpo{
     flex-direction: column;
     justify-content: center;
+    margin: 25px;
 }
 
 .game_info{
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .div2{
@@ -185,6 +188,11 @@ td{
     justify-content: center;
 }
 
+.register {
+    display: flex;
+    flex-direction: column;
+}
+
 .form1 {
     display: flex;
     flex-direction: column;
@@ -194,6 +202,25 @@ td{
 
 label{
     font-size: 20px;
+}
+
+fieldset{
+    margin:15px ;
+    border: none;
+}
+
+.text-register {
+    margin: 15px;
+}
+
+.maps {
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+}
+
+iframe {
+    margin: 16px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {

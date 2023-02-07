@@ -11,7 +11,7 @@
 <body>
     <header>
         <figure>
-            <img class="logo" width="250" src="./images/logo.jpg" alt="logo">
+            <img class="logo" width="150" src="./images/logo.jpg" alt="logo">
         </figure>
         <h1>Mighty Ducks Hockey League</h1>  
      
@@ -28,27 +28,29 @@
         </nav>
         <h2>Registration</h2>
         <br>
+        <div class="register">
+
         <fieldset >
-        <form class="form1">
-            <label for="name">Player´s First Name :<input type="text" name="name" id="name">
+        <form  action="./show_data.html" method="GET" class="form1">
+            <label for="name">Player´s First Name :<input type="text" name="Name" id="name">
             </label>
-            <label for="lastname">Last Name : <input type="text" name="lastname" id="lastname">
+            <label for="lastname">Last Name : <input type="text" name="Lastname" id="lastname">
             </label>
-            <label for="streetaddress"> Street Address:<input type="text" name="streetaddres" id="streetaddres">
+            <label for="streetaddress"> Street Address:<input type="text" name="Streetaddres" id="streetaddres">
             </label>
-            <label for="city">City: <input type="text" name="city" id="city">
+            <label for="city">City: <input type="text" name="City" id="city">
             </label>
-            <label for="zipcode">Zip Code :<input type="number" name="zipcode" id="zipcode">
+            <label for="zipcode">Zip Code :<input type="number" name="Zipcode" id="zipcode">
             </label>
-            <label for="birthday">Birth Date (mm/dd/yyyy) :<input type="date" name="birthday" id="birthday">
+            <label for="birthday">Birth Date (mm/dd/yyyy) :<input type="date" name="Birthday" id="birthday">
             </label>
             <label for="gender">Gender :</label>
-            <select name="gender">
+            <select name="Gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select>
             <label for="grade">Grade:</label>
-            <select name="grade">
+            <select name="Grade">
                 <option value="Pre-School">Pre-School</option>
                 <option value="1st">1st</option>
                 <option value="2nd">2nd</option>
@@ -56,46 +58,43 @@
                 <option value="4th">4th</option>
                 <option value="5th">5th</option>
             </select>
-        </form>
-    </fieldset>
+            </fieldset>
+    
+
     <fieldset>
         <legend>Which elementary school do you live near ?</legend>
         <legend>Closest School:</legend>
-        <form>
-            <input type="radio" id="ajkat" name="closestschool" value="AJ Katzenmaier">
+            <input type="radio" id="ajkat" name="Closestschool" value="AJ Katzenmaier">
             <label for="ajkat">AJ Katzenmaier</label><br>
-            <input type="radio" id="greenbay" name="closestschool" value="Greenbay">
+            <input type="radio" id="greenbay" name="Closestschool" value="Greenbay">
             <label for="greenbay">Greenbay</label><br>
-            <input type="radio" id="howard" name="closestschool" value="Howard A Yeager">
+            <input type="radio" id="howard" name="Closestschool" value="Howard A Yeager">
             <label for="howard">Howard A Yeager</label><br>
-            <input type="radio" id="marjorie" name="closestschool" value="Marjorie P Hart">
+            <input type="radio" id="marjorie" name="Closestschool" value="Marjorie P Hart">
             <label for="marjorie">Marjorie P Hart</label><br>
-            <input type="radio" id="northelem" name="closestschool" value="North Elementary">
+            <input type="radio" id="northelem" name="Closestschool" value="North Elementary">
             <label for="northelem">North Elementary</label><br>
-            <input type="radio" id="southelem" name="closestschool" value="South Elementary">
-            <label for="southelem">South Elementary</label>
-        </form>
+            <input type="radio" id="southelem" name="Closestschool" value="South Elementary">
+            <label for="southelem">South Elementary</label>      
     </fieldset>
         
     <fieldset>
         <legend>What position(s) do you normally play? (check all that apply)</legend>
-        <form>
-            <input type="checkbox" id="Forward" name="Forward" value="Forward">
+            <input type="checkbox" id="Forward" name="Position" value="Forward">
             <label for="Forward"> Forward</label><br>
-            <input type="checkbox" id="Defense" name="Defense" value="Defense">
+            <input type="checkbox" id="Defense" name="Position" value="Defense">
             <label for="Defense"> Defense</label><br>
-            <input type="checkbox" id="Midfield" name="Midfield" value="Midfield">
+            <input type="checkbox" id="Midfield" name="Position" value="Midfield">
             <label for="Midfield"> Midfield</label><br>
-            <input type="checkbox" id="Goalkeeper" name="Goalkeeper" value="Goalkeeper">
+            <input type="checkbox" id="Goalkeeper" name="Position" value="Goalkeeper">
             <label for="Goalkeeper"> Goalkeeper</label>
-        </form>
+        
     </fieldset>
 
     <fieldset>
         <legend>Uniform Size :</legend>
-        <form>
             <label for="uniform-size"></label>
-            <select name="uniform-size">
+            <select name="Uniform-size">
                 <option value="Youth Small">Youth Small</option>
                 <option value="Youth Medium">Youth Medium</option>
                 <option value="Youth Large">Youth Large</option>
@@ -104,9 +103,10 @@
                 <option value="Large">Large</option>
                 <option value="Extra-Large">Extra-Large</option>
             </select>
-        </form>
+        
     </fieldset>
-    <div>
+
+    <div class="text-register">
         <h3>Permission to Play</h3>
         <p>I, the parent or guardian of the minor registrant , agree that the resgitrant and I will
             abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of
@@ -121,18 +121,19 @@
     </div>
     
     <fieldset>
-        <form>
             <label for="parent">
-                Parent/Guardian Signature: <input type="text" name="city" id="city">
+                Parent/Guardian Signature: <input type="text" name="Parent" id="parent">
             </label>
             <label for="date">
-                Date:<input type="date" name="birthday" id="birthday">
+                Date:<input type="date" name="Date" id="date">
             </label>
-        </form>
-    </fieldset>
+       </fieldset>  
+       <input type="submit" value="Enviar">
+</form> 
+
+</div>
     </main>
     <footer>
-        <input type="submit" value="Submit">
     </footer>
 </body>
 </html>
